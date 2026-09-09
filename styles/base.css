@@ -36,12 +36,12 @@ img {
 header {
   background-color: var(--color-header);
   color: #ffffff;
-  padding: 1.25rem 1rem;
   text-align: center;
 }
 
 #course-title {
   display: block;
+  padding: 1.25rem 1rem 1rem;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -133,7 +133,7 @@ main > h1 {
 
 .place-row img {
   width: 120px;
-  height: auto;
+  height: 84px;
   object-fit: contain;
   flex-shrink: 0;
 }
