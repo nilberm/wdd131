@@ -2,9 +2,10 @@
 	--color-primary: #d80621;
 	--color-primary-dark: #a30417;
 	--color-bg: #ffffff;
-	--color-card-bg: rgba(255, 255, 255, 0.95);
+	--color-card-bg: #fffffff2;
 	--color-text: #262626;
 	--color-muted: #5b5b5b;
+	--color-shadow: #00000040;
 	--font-heading: "Poppins", sans-serif;
 	--font-body: "Inter", sans-serif;
 }
@@ -144,7 +145,7 @@ footer p {
 	.weather {
 		position: absolute;
 		width: min(320px, 38%);
-		box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 4px 14px var(--color-shadow);
 		border-radius: 4px;
 	}
 
