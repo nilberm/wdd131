@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Responsive Images – Nilber Mota</title>
+  <meta name="description" content="WDD 131 Week 3 responsive images activity by Nilber Mota, using the picture element and srcset for art-directed hero images.">
+  <meta name="author" content="Nilber Mota">
+
+  <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+  <header>
+    <h1>Responsive Images</h1>
+  </header>
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+        <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+        <img src="images/hero-small.webp" alt="Fortaleza Brazil Temple spire with the angel Moroni statue against a blue sky" width="1500" height="750">
+      </picture>
+    </div>
+    <p>Resize the browser window to see the image change at different breakpoints. Each version is a different crop (art direction), not just a scaled copy of the same image.</p>
+  </main>
+</body>
+</html>

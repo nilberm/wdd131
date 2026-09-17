@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Toronto, Canada – Nilber Mota</title>
+  <meta name="description" content="WDD 131 place page by Nilber Mota featuring Toronto, Canada, with responsive hero images, city data, and a JavaScript-calculated wind chill.">
+  <meta name="author" content="Nilber Mota">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Toronto, Canada</h1>
+  </header>
+
+  <main>
+    <div class="hero">
+      <picture>
+        <source srcset="images/place-large.webp" media="(min-width: 700px)">
+        <img class="hero-photo" src="images/place-small.webp" alt="The CN Tower rising above the Toronto skyline" width="700" height="820">
+      </picture>
+
+      <section class="data">
+        <h2>Data</h2>
+        <dl>
+          <dt>Area:</dt>
+          <dd>630 sq km</dd>
+          <dt>Population:</dt>
+          <dd>2,794,356</dd>
+          <dt>Region:</dt>
+          <dd>Ontario, Canada</dd>
+          <dt>Languages:</dt>
+          <dd>English, French</dd>
+          <dt>Currency:</dt>
+          <dd>Canadian Dollar</dd>
+          <dt>Time Zone:</dt>
+          <dd>UTC−5</dd>
+          <dt>Calling Code:</dt>
+          <dd>+1 (416)</dd>
+          <dt>Internet TLD:</dt>
+          <dd>.ca</dd>
+        </dl>
+      </section>
+
+      <section class="weather">
+        <h2>Weather</h2>
+        <img src="images/weather-partly-cloudy.svg" alt="Partly cloudy" class="weather-icon-mobile" width="36" height="36">
+        <dl>
+          <dt>Temperature:</dt>
+          <dd>8 &deg;C</dd>
+          <dt>Conditions:</dt>
+          <dd>Partly Cloudy</dd>
+          <dt>Wind:</dt>
+          <dd>20 km/h</dd>
+          <dt>Wind Chill:</dt>
+          <dd id="windchill"></dd>
+        </dl>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🍁 Nilber Mota 🍁 Toronto, Canada</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

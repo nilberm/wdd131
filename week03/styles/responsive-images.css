@@ -1,0 +1,28 @@
+body {
+	font-family: sans-serif;
+	color: #1f2937;
+	background-color: #ffffff;
+	margin: 0;
+}
+
+header {
+	padding: 1rem;
+	text-align: center;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 1rem 2rem;
+}
+
+.hero {
+	margin-bottom: 1rem;
+}
+
+.hero img {
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 4px;
+}
