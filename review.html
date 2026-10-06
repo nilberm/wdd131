@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 Review Confirmation by Nilber Mota</title>
+  <meta name="description" content="WDD 131 review confirmation page by Nilber Mota that summarizes the submitted product review and counts completed reviews.">
+  <meta name="author" content="Nilber Mota">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/review.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Thank You for Your Review</h1>
+  </header>
+
+  <main>
+    <section class="confirmation">
+      <p id="review-count"></p>
+      <h2>Your review summary</h2>
+      <dl id="summary"></dl>
+      <a class="button-link" href="form.html">Write another review</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Nilber Mota, Ceará, Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

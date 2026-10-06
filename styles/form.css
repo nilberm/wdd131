@@ -1,0 +1,215 @@
+:root {
+  --color-navy: #12355b;
+  --color-panel: #e9eef4;
+  --color-border: #8aa0b8;
+  --color-text: #1b2430;
+  --color-white: #ffffff;
+  --color-accent: #b3261e;
+  --font-heading: "Poppins", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+}
+
+header {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.25rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: 640px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+}
+
+form,
+.confirmation {
+  background-color: var(--color-panel);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+label,
+legend {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.optional {
+  color: var(--color-navy);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.65rem;
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  border: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+legend em {
+  font-weight: 400;
+}
+
+.rating-options {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.rating-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.rating-option label {
+  font-weight: 400;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.rating-option input,
+.check input {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin: 0;
+  accent-color: var(--color-navy);
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.check label {
+  font-weight: 400;
+  margin: 0;
+}
+
+input[type="submit"],
+.button-link {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font: inherit;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-white);
+  background-color: var(--color-navy);
+  border: 2px solid var(--color-navy);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+.button-link:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy);
+}
+
+select:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+.button-link:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.confirmation h2 {
+  margin-top: 0;
+  color: var(--color-navy);
+}
+
+.confirmation dl {
+  margin: 0 0 1.5rem;
+}
+
+.confirmation dt {
+  font-weight: 600;
+}
+
+.confirmation dd {
+  margin: 0 0 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  text-align: center;
+  padding: 1.25rem 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.25rem 0;
+}

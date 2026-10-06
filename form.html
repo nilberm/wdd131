@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 Product Review Form by Nilber Mota</title>
+  <meta name="description" content="WDD 131 product review form by Nilber Mota with a dynamic product list, star rating, date, features, and optional written review.">
+  <meta name="author" content="Nilber Mota">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/form.css">
+  <script src="scripts/products.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Product Review</h1>
+  </header>
+
+  <main>
+    <form action="review.html" method="get">
+      <div class="field">
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+      </div>
+
+      <fieldset class="rating">
+        <legend>Overall Rating</legend>
+        <div class="rating-options">
+          <div class="rating-option">
+            <label for="rating1"><span aria-hidden="true">&star;</span><span class="visually-hidden">1 star</span></label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating2"><span aria-hidden="true">&star;&star;</span><span class="visually-hidden">2 stars</span></label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating3"><span aria-hidden="true">&star;&star;&star;</span><span class="visually-hidden">3 stars</span></label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating4"><span aria-hidden="true">&star;&star;&star;&star;</span><span class="visually-hidden">4 stars</span></label>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+          </div>
+          <div class="rating-option">
+            <label for="rating5"><span aria-hidden="true">&star;&star;&star;&star;&star;</span><span class="visually-hidden">5 stars</span></label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+          </div>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="installdate">Date of Installation</label>
+        <input type="date" id="installdate" name="installdate" required>
+      </div>
+
+      <fieldset>
+        <legend>Which features did you find useful in the product? <em>(Check all that apply)</em></legend>
+        <div class="check">
+          <input type="checkbox" id="durability" name="features" value="Durability">
+          <label for="durability">Durability</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="ease" name="features" value="Ease of Use">
+          <label for="ease">Ease of Use</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="performance" name="features" value="Performance">
+          <label for="performance">Performance</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="design" name="features" value="Design">
+          <label for="design">Design</label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label for="review">Written Review <span class="optional">(Optional)</span></label>
+        <textarea id="review" name="review" rows="6"></textarea>
+      </div>
+
+      <div class="field">
+        <label for="username">Your Name <span class="optional">(Optional)</span></label>
+        <input type="text" id="username" name="username" autocomplete="name">
+      </div>
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> Nilber Mota, Ceará, Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
