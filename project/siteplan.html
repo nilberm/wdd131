@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 Site Plan for Maple Routes by Nilber Mota</title>
+  <meta name="description" content="Site plan for Maple Routes, a Canada travel guide by Nilber Mota, covering name, purpose, scenarios, colors, typography, and wireframes.">
+  <meta name="author" content="Nilber Mota">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Maple Routes logo, a red maple leaf" width="56" height="56">
+    <div>
+      <h1>Maple Routes</h1>
+      <p>Site Plan for the Canada Travel Guide</p>
+    </div>
+  </header>
+
+  <main>
+    <section id="site-name">
+      <h2>1. Site Name</h2>
+      <p><strong>Maple Routes</strong></p>
+      <p>The name joins the maple leaf, the best known symbol of Canada, with routes, the main thing the site offers: suggested road trips and itineraries across the provinces. It is short, easy to remember, and clearly tells visitors that the site is about traveling through Canada.</p>
+      <p>Optional domain availability: <code>mapleroutes.ca</code></p>
+    </section>
+
+    <section id="site-purpose">
+      <h2>2. Site Purpose</h2>
+      <p>Maple Routes is an informational travel guide that helps visitors plan a trip across Canada. The site provides:</p>
+      <ul>
+        <li>Points of interest organized by province</li>
+        <li>Suggested road trip routes with several stops</li>
+        <li>Practical travel tips such as seasons, driving, and budgeting</li>
+        <li>A trip planner form where visitors can save preferred destinations and travel dates</li>
+      </ul>
+    </section>
+
+    <section id="scenarios">
+      <h2>3. Scenarios</h2>
+      <p>These questions come from the target audience, travelers who are planning a first or return visit to Canada.</p>
+      <ol>
+        <li>What are the best places to visit in Ontario if I only have one week?</li>
+        <li>Which road trip route should I take to see the Rocky Mountains?</li>
+        <li>When is the best season to visit Quebec for a first trip?</li>
+        <li>How can I save my favorite destinations and travel dates to plan later?</li>
+      </ol>
+    </section>
+
+    <section id="color-schema">
+      <h2>4. Color Schema</h2>
+      <p>The colors come from the Canadian flag and from the forests and lakes found across the country. Each color has a role so the site stays consistent.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Color palette and where each color is used</caption>
+          <thead>
+            <tr>
+              <th scope="col">Swatch</th>
+              <th scope="col">Name and value</th>
+              <th scope="col">Where it is used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="swatch swatch-red"></span></td>
+              <td>Maple Red<br>#c8102e</td>
+              <td>Header bar, buttons, links on hover, and accents</td>
+            </tr>
+            <tr>
+              <td><span class="swatch swatch-pine"></span></td>
+              <td>Deep Pine<br>#1b3a34</td>
+              <td>Headings, footer background, and navigation text</td>
+            </tr>
+            <tr>
+              <td><span class="swatch swatch-charcoal"></span></td>
+              <td>Charcoal<br>#222b2a</td>
+              <td>Paragraph and list text</td>
+            </tr>
+            <tr>
+              <td><span class="swatch swatch-mist"></span></td>
+              <td>Mist<br>#f3f5f4</td>
+              <td>Page background and card backgrounds</td>
+            </tr>
+            <tr>
+              <td><span class="swatch swatch-white"></span></td>
+              <td>White<br>#ffffff</td>
+              <td>Text on red and pine backgrounds, and content panels</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="typography">
+      <h2>5. Typography</h2>
+      <p>Two fonts from Google Fonts are used, and only the weights that are needed are loaded.</p>
+      <div class="table-wrap">
+        <table>
+          <caption>Fonts and where each font is used</caption>
+          <thead>
+            <tr>
+              <th scope="col">Font</th>
+              <th scope="col">Weights</th>
+              <th scope="col">Where it is used</th>
+              <th scope="col">Example</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Montserrat</td>
+              <td>600, 700</td>
+              <td>Site name, page titles, and headings</td>
+              <td class="sample-heading">Explore Canada</td>
+            </tr>
+            <tr>
+              <td>Source Sans 3</td>
+              <td>400, 600</td>
+              <td>Body text, navigation, forms, and captions</td>
+              <td class="sample-body">Plan your next road trip.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="wireframes">
+      <h2>6. Wireframes</h2>
+      <p>These wireframes show the layout of the home page in the mobile view and in the wider desktop view.</p>
+
+      <div class="wireframes">
+        <figure>
+          <svg viewBox="0 0 240 460" role="img" aria-labelledby="mobileTitle mobileDesc">
+            <title id="mobileTitle">Mobile home page wireframe</title>
+            <desc id="mobileDesc">A stacked layout with a header and menu button, a hero image, featured destination cards in one column, and a footer.</desc>
+            <rect x="2" y="2" width="236" height="456" class="wf-frame"/>
+            <rect x="2" y="2" width="236" height="44" class="wf-box"/>
+            <text x="14" y="30" class="wf-text">Logo and name</text>
+            <rect x="198" y="16" width="26" height="4" class="wf-line"/>
+            <rect x="198" y="24" width="26" height="4" class="wf-line"/>
+            <rect x="198" y="32" width="26" height="4" class="wf-line"/>
+            <rect x="2" y="46" width="236" height="120" class="wf-box"/>
+            <line x1="2" y1="46" x2="238" y2="166" class="wf-line"/>
+            <line x1="238" y1="46" x2="2" y2="166" class="wf-line"/>
+            <text x="120" y="110" class="wf-text wf-center">Hero image and tagline</text>
+            <rect x="14" y="180" width="212" height="70" class="wf-box"/>
+            <text x="24" y="220" class="wf-text">Featured destination 1</text>
+            <rect x="14" y="260" width="212" height="70" class="wf-box"/>
+            <text x="24" y="300" class="wf-text">Featured destination 2</text>
+            <rect x="14" y="340" width="212" height="70" class="wf-box"/>
+            <text x="24" y="380" class="wf-text">Featured destination 3</text>
+            <rect x="2" y="418" width="236" height="40" class="wf-box"/>
+            <text x="120" y="442" class="wf-text wf-center">Footer</text>
+          </svg>
+          <figcaption>Mobile view</figcaption>
+        </figure>
+
+        <figure>
+          <svg viewBox="0 0 520 360" role="img" aria-labelledby="desktopTitle desktopDesc">
+            <title id="desktopTitle">Desktop home page wireframe</title>
+            <desc id="desktopDesc">A header with the logo and a horizontal menu, a wide hero image, three featured destination cards in a row, and a footer.</desc>
+            <rect x="2" y="2" width="516" height="356" class="wf-frame"/>
+            <rect x="2" y="2" width="516" height="40" class="wf-box"/>
+            <text x="14" y="27" class="wf-text">Logo and name</text>
+            <text x="300" y="27" class="wf-text">Home</text>
+            <text x="346" y="27" class="wf-text">Provinces</text>
+            <text x="410" y="27" class="wf-text">Routes</text>
+            <text x="460" y="27" class="wf-text">Plan</text>
+            <rect x="2" y="42" width="516" height="150" class="wf-box"/>
+            <line x1="2" y1="42" x2="518" y2="192" class="wf-line"/>
+            <line x1="518" y1="42" x2="2" y2="192" class="wf-line"/>
+            <text x="260" y="122" class="wf-text wf-center">Hero image and tagline</text>
+            <rect x="16" y="206" width="154" height="100" class="wf-box"/>
+            <text x="26" y="260" class="wf-text">Destination 1</text>
+            <rect x="183" y="206" width="154" height="100" class="wf-box"/>
+            <text x="193" y="260" class="wf-text">Destination 2</text>
+            <rect x="350" y="206" width="154" height="100" class="wf-box"/>
+            <text x="360" y="260" class="wf-text">Destination 3</text>
+            <rect x="2" y="320" width="516" height="38" class="wf-box"/>
+            <text x="260" y="344" class="wf-text wf-center">Footer</text>
+          </svg>
+          <figcaption>Desktop view</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nilber Mota, Maple Routes site plan</p>
+  </footer>
+</body>
+</html>
